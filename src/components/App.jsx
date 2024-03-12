@@ -26,7 +26,7 @@ class App extends Component {
   };
 
   isNameExist = name => {
-    return this.state.contacts.map(contact => contact.name).includes(name);
+    return this.state.contacts.find(contact => contact.name === name);
   };
 
   handleFilter = evt => {
